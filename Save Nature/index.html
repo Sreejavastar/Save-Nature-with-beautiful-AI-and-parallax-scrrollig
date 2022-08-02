@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Naturet</title>
+    <link rel="shortcut icon" href="img/save-nature.png" type="img/save-nature"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo"><img src="img/save-nature-icon.png" alt="save-nature-icon">Save Nature </a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Moto</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for a new</span><br> Environment</h2>
+        <img src="img/bird1.png" id="bird1">
+        <img src="img/bird2.png" id="bird2">
+        <img src="img/forest.png" id="forest">
+        <a href="#" id="btn">Explore</a>
+        <img src="img/rocks.png" id="rocks">
+        <img src="img/water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>Nature and Climax</h2>
+        <p>
+            Nearly every ecosystem, tree, and animal helps produce Earth’s climate. And right now, the
+            extinction crisis exacerbates the climate crisis. Protecting and restoring nature is
+            the biggest step we can take toward stabilizing the climate emergency.
+            Climate change is commonly understood to be one of the drivers of extinction, affecting
+            biodiversity in nearly every corner of the planet. <br> But few realize that the loss
+            of biodiversity is also exacerbating climate change, and shifting global weather patterns.
+            Discover more about the relationship between wild nature and climate change in the paragraphs
+            below.</p>
+         <br><br><br><br><br><br><br>
+          <h2>Why does Biodiversity matter for climate change?</h2>
+          <p>Biodiversity is the sum total
+            of life on Earth. It includes every individual living being, from the tiniest mosses to the
+            largest whales, and the resulting benefits produced by this web of life.<br>
+             Earth’s climate patterns are, in part, a direct consequence of its biodiversity. We can observe
+            these relational patterns across numerous regions in the world, and some of the most significant
+            include:<br>
+             70% of the rainfall in southern South America results from weather patterns created by the
+            Amazon rainforest The boreal forests in Russia, Canada, and Scandinavia are Earth’s largest
+            above-ground carbon sequestration system, storing enough carbon to catastrophically change
+            Earth’s climate if released by deforestation. Peatlands are the best terrestrial below-ground
+            carbon storage system. <br> They currently cover 3% of Earth’s surface.Ocean life, from seaweed to plankton to the fish that act as natural “gardeners” of marine flora, is
+            Earth’s most important carbon storage area.<br>Because of the interrelationship
+            between life  plant life and the animals that make maintain the essential balance in natural
+            ecosystems  and the climate, every time we harm Earth’s biodiversity, we destroy a living
+            component that helps regulate the weather and atmospheric carbon.<br> The imminent threat of climate change isn’t just a threat to biodiversity, but also a direct consequence of mass extinction.
+          </p><br><br><br><br><br><br><br>
+          <h2>What can I do to help?</h2>
+          <p>The biggest driver of the mass extinction that accelerates climate
+            change is the legal destruction of wildlands for industrial extraction and infrastructure
+            projects.<br>
+            We must protect and restore wild nature in every country, region, and community. This means
+            mobilizing private individuals to take action in their neighborhoods and cities as well as
+            influencing elected leaders to do a better job at protecting public lands and expanding those
+            protections to include critically important areas threatened by the imminent potential for
+            destruction.<br>
+            You can start by joining WILD’s global Survival Revolution. In the next decade, world leaders
+            will convene multiple times to decide on how much nature people need to survive. The science is
+            clear  we need half but not all leaders are empowered to act on the science. <br>Your voice,
+            united with the voices of millions of others, is an essential part of solving the climate and
+            extinction emergencies. We need you to let others know how much wild nature we need to secure the
+            future of life on Earth.<br> </p>
+    </div>
+
+    <script>
+      let text = document.getElementById('text');  
+      let bird1 = document.getElementById('bird1');  
+      let bird2 = document.getElementById('bird2');  
+      let btn = document.getElementById('btn');  
+      let rocks = document.getElementById('rocks');  
+      let forest = document.getElementById('forest');  
+      let water = document.getElementById('water'); 
+      
+      window.addEventListener('scroll' , function(){
+        let value = window.scrollY;
+        text.style.top = 50 + value * -0.5 + '%';
+        bird1.style.top = value * -1.5 + 'px';
+        bird1.style.left = value * 2 + 'px';
+        bird2.style.top = value * -1.5 + 'px';
+        bird2.style.left = value * -5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        rocks.style.top = value * -0.12 + 'px';
+        forest.style.top = value * 0.25 + 'px';
+        header.style.top = value * 0.5 + 'px';
+      })
+    </script>
+</body>
+<!-- <a href="https://www.flaticon.com/free-icons/nature" title="nature icons">Nature icons created by Flat Icons - Flaticon</a> -->
+
+</html>
